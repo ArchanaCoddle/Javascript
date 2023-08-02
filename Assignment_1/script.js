@@ -13,8 +13,8 @@ console.log("null_variable is a "+typeof null_variable);
 console.log("arr is an "+typeof arr);
 console.log("object is an "+typeof object);
 
-let text_notemp=num+","+msg+","+bool+","+ud_variable+","+null_variable+","+arr+","+object;
-let text_temp=`${num},${msg},${bool},${ud_variable},${null_variable},${arr},${object}`
+let text_notemp=num+" "+msg+" "+bool+" "+ud_variable+" "+null_variable+" "+arr+" "+object;
+let text_temp=`${num} ${msg} ${bool} ${ud_variable} ${null_variable} ${arr} ${object}`
 console.log("Without template literals - "+text_notemp)
 console.log("With template literals - "+text_temp)
 
