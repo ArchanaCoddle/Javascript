@@ -21,7 +21,7 @@ const Array1 = [1, 2, 3, 4];
 const Array2 = [5, 6, 7, 8];
 const Array3 = Array1.concat(Array2);
 console.log(Array3);
-for (let i = 0; i < Array3.length; i + 1) {
+for (let i = 0; i < Array3.length; i += 1) {
   const j = Array3[i] + Array3[i + 1];
   console.log(j);
 }
@@ -66,11 +66,11 @@ console.log(array1.concat(array2));
 
 // pattern printing
 let temp = '';
-for (let i = 1; i <= 5; i + 1) {
-  for (let j = 1; j <= 5 - i; j + 1) {
+for (let i = 1; i <= 5; i += 1) {
+  for (let j = 1; j <= 5 - i; j += 1) {
     temp += ' ';
   }
-  for (let k = 0; k < i; k + 1) {
+  for (let k = 0; k < i; k += 1) {
     temp += ' *';
   }
   temp += '\n';
