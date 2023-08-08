@@ -21,4 +21,4 @@ const textTemp = `${num} ${msg} ${bool} ${udVariable} ${nullVariable} ${arr} ${o
 console.log('Without template literals - ', textNotemp);
 console.log('With template literals - ', textTemp);
 // Write a JS program to show an alert message on the loading of the website.
-// window.alert('Hello welcome to this page');
+alert('Hello welcome to this page');
