@@ -51,8 +51,8 @@ formSubmit.addEventListener('click', () => {
   document.cookie = `company=${pCompany}; expires=Wed, 9 aug 2023 24:00:00 UTC; path=/`;
 });
 // 4.Redirect to the homepage of google from the console.
-const url = 'https://www.google.com';
-window.location.href = url;
+// const url = 'https://www.google.com';
+// window.location.href = url;
 
 //5. Create a div with background color red, create buttons
 // to hide the div
@@ -111,7 +111,7 @@ const language = ['HTML', 'CSS', 'JavaScript', 'JQuery', 'Java', 'c programming'
 language.forEach((element) => {
   const btn = document.createElement('button');
   btn.innerHTML = element;
-  document.body.appendChild(btn);
+  document.getElementById('selectingLanguage').appendChild(btn);
   btn.addEventListener('click', () => {
     document.getElementById('lang').innerHTML = element;
   });
