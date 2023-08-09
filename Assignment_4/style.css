@@ -1,0 +1,27 @@
+#box1{
+    height: 40%;
+    padding:  10% 20%;
+    background-color: red;
+    color: aliceblue;
+    text-align: center;
+}
+button{
+    padding: 8px;
+}
+#colorChange{
+    height: 40%;
+    background-color: aqua;
+    padding: 10% 20%;
+}
+#selector{
+    padding: 1%;
+}
+#formCookie{
+    padding: 5px;
+}
+#selectingLanguage{
+    padding: 5px;
+}
+#titleChange{
+    padding: 5px;
+}
