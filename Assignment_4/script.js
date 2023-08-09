@@ -111,7 +111,7 @@ const language = ['HTML', 'CSS', 'JavaScript', 'JQuery', 'Java', 'c programming'
 language.forEach((element) => {
   const btn = document.createElement('button');
   btn.innerHTML = element;
-  document.body.appendChild(btn);
+  document.getElementById('selectingLanguage').appendChild(btn);
   btn.addEventListener('click', () => {
     document.getElementById('lang').innerHTML = element;
   });
