@@ -1,0 +1,21 @@
+body{
+    padding: 5px;
+}
+p{
+    margin: 0;
+}
+#nameError{
+    color: red;
+}
+#numberError{
+    color: red;
+}
+#placeError{
+    color: red;
+} 
+#companyError{
+    color: red;
+}
+#pinError{
+    color: red;
+}
