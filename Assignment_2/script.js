@@ -23,9 +23,9 @@ console.log(numArray);
 // and then add "one" and "two"  temps) to the beginning of the array and console the array.
 
 //check the output
-
+const arrayOfNumber = ['1', '2', '3', '4', '5', '6', '7'];
 console.log('1 c.');
-const lastarray = array.splice(3, 3);
+const lastarray = arrayOfNumber.splice(0, 4);
 console.log(lastarray);
 lastarray.unshift('one', 'two');
 console.log(lastarray);
@@ -33,12 +33,18 @@ console.log(lastarray);
 // of the array and also console the sum of all the items ( convert to integer before calculating)
 
 //read the question properly
-// you can use this array [1,2,"3",4,"5","6",7]
+// you can use this array [1,2,"3",4,"5","6",7]---------------------
 
 console.log('1 d.');
 const Array1 = [1, 2, '3', 4];
 const Array2 = ['5', '6', 7];
-const Array3 = Array1.concat(Array2);
+let Array3;
+// eslint-disable-next-line array-callback-return
+Array1.map((value) => {
+  Array2.forEach((value2) => {
+    Array3 = Array1.concat(Array2);
+  });
+});
 console.log(Array3);
 let sum = 0;
 Array3.forEach((item) => {
