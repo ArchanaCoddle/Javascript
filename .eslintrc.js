@@ -4,6 +4,14 @@ module.exports = {
     es2021: true,
   },
   extends: 'airbnb-base',
+  ignorePatterns: [
+    'node_modules/',
+    '**/node_modules/',
+    '/**/node_modules/*',
+    'out/',
+    'dist/',
+    'build/',
+  ],
   overrides: [
     {
       env: {
