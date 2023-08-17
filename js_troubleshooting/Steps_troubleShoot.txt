@@ -1,0 +1,9 @@
+step 1 : Set the path of .js file in index.html
+step 2 : 'selectedIndex--' is changed to 'selectedIndex -= 1'
+step 3 : 'selectedIndex++' is changed to 'selectedIndex += 1'
+step 4 : 'imgs' id which is getting is missspelled as img
+step 5 : syntax error of getElementById
+step 6 : value checking condition is error, it should be checked with '0'.
+step 7 : value increment condition is error, it should only have <.
+step 8 : the statement is also having error, it should decrement its value.
+step 9: the image is passed by 'setAttribute' to the src.
