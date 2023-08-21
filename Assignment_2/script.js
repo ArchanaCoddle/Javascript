@@ -36,21 +36,17 @@ console.log(lastarray);
 // you can use this array [1,2,"3",4,"5","6",7]---------------------
 
 console.log('1 d.');
-const Array1 = [1, 2, '3', 4];
-const Array2 = ['5', '6', 7];
-let Array3;
-// eslint-disable-next-line array-callback-return
-Array1.map((value) => {
-  Array2.forEach((value2) => {
-    Array3 = Array1.concat(Array2);
-  });
-});
-console.log(Array3);
+const Array1 = [1, 2, '3', 4, '5', '6', 7];
+let concat = '';
 let sum = 0;
-Array3.forEach((item) => {
+Array1.forEach((item) => {
+  console.log(item);
+  concat += item;
   sum += Number(item);
 });
-console.log('sum = ', sum);
+
+console.log('Concat :', concat);
+console.log('Sum:', sum);
 
 // e. Filter out item "3" from the array and console the array (use any array method)
 console.log('1 e.');
@@ -71,13 +67,15 @@ arry1.forEach((item) => {
 // with each item of the other array)
 console.log('1 g.');
 const Arraynew = [1, 2, '3', 4, 5, 6, '7'];
-arry1.forEach((item1) => {
+const ary1 = [1, 2, 3, 7, 5, 6, 8];
+ary1.forEach((item1) => {
   Arraynew.forEach((item2) => {
     if (typeof item1 === typeof item2) {
       console.log(`${item2}`);
     }
   });
 });
+
 // h. [0,2,3,7,5,6,8] iterate the array and multiply each item by its index value and console
 //  the result only if result is greater than 40.
 
