@@ -51,8 +51,8 @@ formSubmit.addEventListener('click', () => {
   document.cookie = `company=${pCompany}; expires=Wed, 9 aug 2023 24:00:00 UTC; path=/`;
 });
 // 4.Redirect to the homepage of google from the console.
-const url = 'https://www.google.com';
-window.location.href = url;
+// const url = 'https://www.google.com';
+// window.location.href = url;
 
 //5. Create a div with background color red, create buttons
 // to hide the div
@@ -98,10 +98,10 @@ const selector = document.getElementById('selector');
 selector.addEventListener('change', () => {
   // eslint-disable-next-line no-unused-expressions
   if (selector.value === '9') {
-    document.getElementById('paragraph').innerHTML = ` ${selector.value} is fully occupied please select another number`;
+    document.getElementById('colorChange').innerHTML = ` ${selector.value} is fully occupied please select another number`;
     document.getElementById('selector').value = '10';
   } else {
-    document.getElementById('paragraph').innerHTML = `You selected: ${selector.value}`;
+    document.getElementById('colorChange').innerHTML = `You selected: ${selector.value}`;
   }
 });
 //7. Consider an array with names of 10 programming languages, make 10 buttons by
@@ -124,10 +124,11 @@ const title = document.getElementById('title');
 const tBtn = document.getElementById('submitBtn');
 tBtn.addEventListener('click', () => {
   const newTitle = title.value;
-  document.title = newTitle;
   console.log(newTitle);
-  if (newTitle.length > 50) {
+  if (newTitle.length >= 50) {
     document.getElementById('error').innerHTML = 'Title must be less than 50 characters.';
+  } else {
+    document.title = newTitle;
   }
 });
 
