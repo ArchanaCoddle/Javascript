@@ -66,10 +66,10 @@ arry1.forEach((item) => {
 // only if both items of the array have same data type. (Compare each item of this array
 // with each item of the other array)
 console.log('1 g.');
-const Arraynew = [1, 2, '3', 4, 5, 6, '7'];
+const arrayNew = [1, 2, '3', 4, 5, 6, '7'];
 const ary1 = [1, 2, 3, 7, 5, 6, 8];
 ary1.forEach((item1) => {
-  Arraynew.forEach((item2) => {
+  arrayNew.forEach((item2) => {
     if (typeof item1 === typeof item2) {
       console.log(`${item2}`);
     }
