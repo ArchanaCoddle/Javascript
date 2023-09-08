@@ -1,4 +1,6 @@
-
+.main{
+    display: flex;
+}
 #main{
     width: 550px;
     height: 550px;
